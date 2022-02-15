@@ -3,6 +3,7 @@ import { render } from 'react-dom'
 import App from './App'
 import './samples/electron-store'
 import './styles/index.css'
+import './assets/icons'
 
 render(
   <StrictMode>

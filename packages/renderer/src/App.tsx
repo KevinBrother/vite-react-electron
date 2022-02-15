@@ -6,6 +6,12 @@ import { useState } from 'react'
 
 const App = () => {
   const [count, setCount] = useState(0)
+  const icon = `#bg`;
+  const styldde: React.CSSProperties = {
+    height: '160px',
+    width: '160px',
+    fill: 'currentcolor',
+  };
 
   return (
     <div className={styles.app}>
@@ -30,7 +36,11 @@ const App = () => {
               alt="logo"
             />
           </div>
-        </div>
+        </div>12
+        my-svg--------------------2
+        <svg style={styldde}>
+          <use xlinkHref={icon} />
+        </svg>
         <p>Hello Electron + Vite + React!</p>
         <p>
           <button onClick={() => setCount((count) => count + 1)}>
